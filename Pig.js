@@ -2,11 +2,11 @@ const chalk = require('chalk');
 
 function Pig(name) {
     this.name = name;
-    this.stomach = this.stomach;
+    this.stomach = [];
 }
 
-Pig.prototype.eat = function(rice) {
-    this.stomach.push(rice);
+Pig.prototype.eat = function(dog) {
+    this.stomach.push(dog);
 };
 
 Pig.prototype.sayHi = function() {
