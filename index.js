@@ -1,8 +1,16 @@
-const Pig = require('./Pig');
-const Dog = require('./Dog');
+var cat = require('./cat');
+var mouse = require('./mouse');
+var dog = require('./Dog');
+var Dog = require('./Dog');
 
 
-var pig = new Pig('Han');
-var dog = new Dog('milu', 1);
-pig.eat(dog);
-pig.sayHi();
+var cat = new cat();
+var mouse = new mouse('Mickey');
+var dog = new Dog();
+try {
+    cat.eat(dog);
+} catch (error) {
+    console.log('Error while cat eating a dog');
+}
+
+console.log(cat);
